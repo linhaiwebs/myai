@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="logo-mark-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="logo-mark-glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle for social/icon contexts -->
+  <circle cx="24" cy="24" r="23" fill="#0f172a"/>
+
+  <!-- Hexagonal node-network mark -->
+  <g filter="url(#logo-mark-glow)">
+    <polygon
+      points="24,9 33,9 37.5,16.5 33,24 24,24 19.5,16.5"
+      fill="none"
+      stroke="url(#logo-mark-grad)"
+      stroke-width="1.8"
+      stroke-linejoin="round"
+    />
+    <circle cx="28.5" cy="16.5" r="4" fill="url(#logo-mark-grad)"/>
+    <!-- Spokes -->
+    <line x1="19.5" y1="16.5" x2="24.5" y2="16.5" stroke="url(#logo-mark-grad)" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="32.5" y1="16.5" x2="37.5" y2="16.5" stroke="url(#logo-mark-grad)" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="21.75" y1="12" x2="26" y2="14.5" stroke="url(#logo-mark-grad)" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="31" y1="14.5" x2="35.25" y2="12" stroke="url(#logo-mark-grad)" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="21.75" y1="21" x2="26" y2="18.5" stroke="url(#logo-mark-grad)" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="31" y1="18.5" x2="35.25" y2="21" stroke="url(#logo-mark-grad)" stroke-width="1.4" stroke-linecap="round"/>
+    <!-- Corner dots -->
+    <circle cx="19.5" cy="16.5" r="2" fill="#22d3ee"/>
+    <circle cx="37.5" cy="16.5" r="2" fill="#2563eb"/>
+    <circle cx="24" cy="9" r="1.6" fill="#22d3ee" opacity="0.8"/>
+    <circle cx="33" cy="9" r="1.6" fill="#38bdf8" opacity="0.8"/>
+    <circle cx="24" cy="24" r="1.6" fill="#60a5fa" opacity="0.8"/>
+    <circle cx="33" cy="24" r="1.6" fill="#2563eb" opacity="0.8"/>
+  </g>
+
+  <!-- "AI" text mark at bottom -->
+  <text
+    x="24"
+    y="38"
+    text-anchor="middle"
+    font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+    font-size="9"
+    font-weight="800"
+    letter-spacing="2"
+    fill="url(#logo-mark-grad)"
+  >AI</text>
+</svg>
