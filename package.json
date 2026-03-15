@@ -209,7 +209,21 @@
     "wrangler": "^4.44.0"
   },
   "resolutions": {
-    "@typescript-eslint/utils": "^8.0.0-alpha.30"
+    "@typescript-eslint/utils": "^8.0.0-alpha.30",
+    "wrangler": "^4.44.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "wrangler": "^4.44.0"
+    },
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "wrangler"
+      ],
+      "allowAny": [
+        "wrangler"
+      ]
+    }
   },
   "packageManager": "pnpm@9.14.4"
 }
